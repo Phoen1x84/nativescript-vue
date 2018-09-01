@@ -5,17 +5,25 @@ Vue.use(VueRouter);
 
 import Home from '../components/Home';
 import HelloWorld from '../components/HelloWorld';
+import Login from '../components/Login';
 
 const router = new VueRouter({
   pageRouting: true,
   routes: [
     {
       path: '/home',
-      component: Home,
+      component: Login,
       meta: {
-        title: 'Home',
-      },
+        title: 'Sign in'
+      }
     },
+    // {
+    //   path: '/home',
+    //   component: Home,
+    //   meta: {
+    //     title: 'Home',
+    //   },
+    // },
     {
       path: '/hello',
       component: HelloWorld,

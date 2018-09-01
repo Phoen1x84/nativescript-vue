@@ -1,6 +1,6 @@
 import Vue from 'nativescript-vue';
-
 import router from './router';
+//Vue.registerElement('Gradient', () => require('nativescript-gradient').Gradient);
 
 
 import './styles.scss';
