@@ -6,6 +6,8 @@ Vue.use(VueRouter);
 import Home from '../components/Home';
 import HelloWorld from '../components/HelloWorld';
 import Login from '../components/Login';
+import MakeAClaim from '../components/MakeAClaim';
+import MyClaims from '../components/MyClaims';
 
 const router = new VueRouter({
   pageRouting: true,
@@ -15,6 +17,20 @@ const router = new VueRouter({
       component: Login,
       meta: {
         title: 'Sign in'
+      }
+    },
+    {
+      path: '/makeClaim',
+      component: MakeAClaim,
+      meta: {
+        title: 'Making your claim'
+      }
+    },
+    {
+      path: '/claims',
+      component: MyClaims,
+      meta: {
+        title: 'Claims'
       }
     },
     // {
